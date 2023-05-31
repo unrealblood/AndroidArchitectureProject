@@ -2,8 +2,8 @@ package com.strength.androidarchitectureproject.viewmodels
 
 import androidx.lifecycle.ViewModel
 
-class MainViewModel : ViewModel() {
-    var numberX = 0
+class MainViewModel(val defaultNumberX : Int) : ViewModel() {
+    var numberX = defaultNumberX
 
     fun incrementNumberX() {
         numberX++

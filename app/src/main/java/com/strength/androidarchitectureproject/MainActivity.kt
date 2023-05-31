@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.ViewModelProvider
 import com.strength.androidarchitectureproject.viewmodels.MainViewModel
+import com.strength.androidarchitectureproject.viewmodels.MainViewModelFactory
 
 class MainActivity : AppCompatActivity(), LifecycleOwner {
     init {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         numberTextView = findViewById(R.id.number_text_view_MA)
         increaseButton = findViewById(R.id.increment_button_MA)
 
-        val mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        val mainViewModel = ViewModelProvider(this, MainViewModelFactory(10)).get(MainViewModel::class.java)
 
         updateNumberTextView(numberTextView, mainViewModel)
 

@@ -12,15 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textSize="50sp"
-        android:text="0" />
-
-    <Button
-        android:id="@+id/increment_button_MA"
-        android:layout_centerHorizontal="true"
-        android:text="Increase"
-        android:layout_marginTop="25dp"
-        android:layout_width="wrap_content"
-        android:layout_below="@id/number_text_view_MA"
-        android:layout_height="wrap_content" />
+        android:text="Hello World" />
 
 </RelativeLayout>
